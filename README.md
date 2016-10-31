@@ -1,0 +1,1 @@
+AndFix is a famous hot-fix project, and it is not so good today. I am a new programmer,and this project takes me about half an week's time, Although it can not be taken into our project, it can make me know more about this. So I put it here just to record my program history and hope it is useful for more people.
