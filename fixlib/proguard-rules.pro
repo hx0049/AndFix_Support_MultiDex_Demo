@@ -1,17 +1,15 @@
-# Add project specific ProGuard rules here.
-# By default, the flags in this file are appended to flags specified
-# in D:\Users\Administrator\AppData\Local\Android\sdk/tools/proguard/proguard-android.txt
-# You can edit the include path and order by changing the proguardFiles
-# directive in build.gradle.
-#
-# For more details, see
-#   http://developer.android.com/guide/developing/tools/proguard.html
 
-# Add any project specific keep options here:
+# Proguard File
+# if you minifyEnabled = true,before you patch,yous should add the following sentence in this proguardFile,
+#-applymapping mapping.txt
+# make sure the app uses the same rule of packaging
+# the mapping file should be at the right directory
+# or you can put all your proguardFile in the ProGuard Rules For App
 
-# If your project uses WebView with JS, uncomment the following
-# and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
+
+#-applymapping mapping.txt
+-keep class com.alipay.euler.** {*;}
+-keep class * extends java.lang.annotation.Annotation
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
